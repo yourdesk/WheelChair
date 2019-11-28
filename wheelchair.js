@@ -336,6 +336,7 @@ function cripple_window(_window) {
 
                         // info
                         
+                        /*
                         c.font = "60px Sans-serif";
                         c.fillStyle = "white";
                         c.strokeStyle='black';
@@ -351,7 +352,7 @@ function cripple_window(_window) {
                         y += 35;
                         c.fillText(e.health + ' HP', x, y);
                         c.strokeText(e.health + ' HP', x, y);
-                        
+                        */
 
                         c.strokeStyle = original_strokeStyle;
                         c.lineWidth = original_lineWidth;
