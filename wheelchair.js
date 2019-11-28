@@ -351,13 +351,15 @@ function cripple_window(_window) {
                         y += 35;
                         c.fillText(e.health + ' HP', x, y);
                         c.strokeText(e.health + ' HP', x, y);
+                        */
 
                         c.strokeStyle = original_strokeStyle;
                         c.lineWidth = original_lineWidth;
                         c.font = original_font;
                         c.fillStyle = original_fillStyle;
                         c.restore();
-
+                        
+                        /*
                         // skelly chams
                         // note: this can be done better
                         if (e.legMeshes[0]) {
@@ -369,6 +371,7 @@ function cripple_window(_window) {
                             material.wireframe = true;
                         }
                         */
+                        
 
                     }
                 };
