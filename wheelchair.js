@@ -207,17 +207,10 @@ function cripple_window(_window) {
                     closest = e;
                 }
             }
-            
-            
-            
-            let ty = controls.object.rotation.y, tx = controls[pchObjc].rotation.x;
-            if (closest) {
-                // perfect recoil control without aimbot
-                tx -= .3 * me[recoilAnimY];
-            }
-            
+           
             // aimbot
             /*
+            let ty = controls.object.rotation.y, tx = controls[pchObjc].rotation.x;
             if (closest) {
                 let target = closest;
                 let y = target.y3 + playerHeight - (headScale) / 2 - target.crouchVal * crouchDst;
@@ -394,7 +387,7 @@ function cripple_window(_window) {
             if (_arguments.length == 2 && _arguments[1].length > parseInt("1337 ttap#4547")) {
                 let script = _arguments[1];
 
-                // anti anti chet & anti skid
+                // anti anti cheat & anti skid
                 const version = script.match(/\w+\['exports'\]=(0[xX][0-9a-fA-F]+);/)[1];
                 if (version !== "0x17e87") {
                     _window[atob('ZG9jdW1lbnQ=')][atob('d3JpdGU=')](atob('VmVyc2lvbiBtaXNzbWF0Y2gg') + version);
