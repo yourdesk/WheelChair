@@ -207,11 +207,20 @@ function cripple_window(_window) {
                     closest = e;
                 }
             }
-            // aimbot
+            
+            
+            
             let ty = controls.object.rotation.y, tx = controls[pchObjc].rotation.x;
             if (closest) {
+                // perfect recoil control without aimbot
+                tx -= .3 * me[recoilAnimY];
+            }
+            
+            // aimbot
+            /*
+            if (closest) {
                 let target = closest;
-                let y = target.y3 + playerHeight - (headScale/* + hitBoxPad*/) / 2 - target.crouchVal * crouchDst;
+                let y = target.y3 + playerHeight - (headScale) / 2 - target.crouchVal * crouchDst;
                 if (me.weapon.nAuto && me.didShoot) {
                     inputs[SHOOT] = 0;
                 } else if (!me.aimVal) {
@@ -235,6 +244,7 @@ function cripple_window(_window) {
             // silent aim
             inputs[xDr] = +(tx % PI2).toFixed(3);
             inputs[yDr] = +(ty % PI2).toFixed(3);
+            */
 
             // auto reload
             controls.keys[controls.reloadKey] = !haveAmmo() * 1;
