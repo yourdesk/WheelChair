@@ -335,6 +335,7 @@ function cripple_window(_window) {
                         c.fillRect(xmin - 7, ymin, -10, barMaxHeight * (e.health / e.maxHealth));
 
                         // info
+                        /*
                         c.font = "60px Sans-serif";
                         c.fillStyle = "white";
                         c.strokeStyle='black';
@@ -367,6 +368,7 @@ function cripple_window(_window) {
                             material.emissive.g = 1;
                             material.wireframe = true;
                         }
+                        */
 
                     }
                 };
