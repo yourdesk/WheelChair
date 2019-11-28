@@ -360,7 +360,7 @@ function cripple_window(_window) {
                         c.fillStyle = original_fillStyle;
                         c.restore();
                         
-                        /*
+                        
                         // skelly chams
                         // note: this can be done better
                         if (e.legMeshes[0]) {
@@ -371,7 +371,7 @@ function cripple_window(_window) {
                             material.emissive.g = 1;
                             material.wireframe = true;
                         }
-                        */
+                        
                         
 
                     }
